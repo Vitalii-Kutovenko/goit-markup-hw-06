@@ -576,6 +576,94 @@ visibility: hidden;
 .link-footer {
   display: flex;
 }
+.footer-form h3 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: #F4F4FD;
+}
+.footer-form {
+margin-left: 80px;
+width: 453px;
+}
+.footer-form form {
+  width: 250px;
+}
+.footer-sub {
+  display: flex;
+  width: 453px;
+}
+.form-filed {
+  position: relative;
+  width: 250px;
+  margin-right: 0;
+}
+.mail-form-footer {
+  width: 250px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: #2E2F42;
+  padding-left: 16px;
+
+  color: #F4F4FD;
+}
+.mail-form-footer:focus + .label-footer,
+.mail-form-footer:not(:placeholder-shown) + .label-footer {
+  left: -50px;
+}
+.label-footer {
+  position: absolute;
+  top: 0;
+  left: 16px;
+  color: rgba(255, 255, 255, 0.6);
+  transform: translateY(58%);
+  transition-property: left;
+  transition-duration: 250ms;
+  -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+}
+.subscribe {
+  position: relative;
+  width: 160px;
+  height: 40px;
+  background-color: var(--accent-color);
+  color: #fff;
+  font-family: 'Roboto';
+  border-radius: 4px;
+  margin-right: 0;
+  margin-left: 24px;
+  border: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 24px;
+  padding-left: 0;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe:hover,
+.subscribe:focus {
+  cursor: pointer;
+  background-color: #404BBF;
+}
+.subscribe::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(50%);
+  right: 24px;
+  display: inline-block;
+  content: "";
+  width: 24px;
+  height: 20px;
+  background-image: url(../images/iconsend.svg);
+  
+}
 .radio-button {
   background-color: #f4f4fd;
   color: #4d5ae5;
