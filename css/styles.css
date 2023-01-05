@@ -616,7 +616,7 @@ width: 453px;
   top: 0;
   left: 16px;
   color: rgba(255, 255, 255, 0.6);
-  transform: translateY(58%);
+  transform: translateY(50%);
   transition-property: left;
   transition-duration: 250ms;
   -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
