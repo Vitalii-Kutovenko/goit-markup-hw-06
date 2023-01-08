@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HW-6-</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,7 +13,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    
   </head>
   <body class="list" >
     <header class="header">
@@ -37,7 +38,9 @@
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
           <button class="modal-btn" data-modal-close>
-            <img class="icon-close" src="./images/close.jpg" alt="">
+            <svg class="icon-close">
+              <use href="./images/symbol-defs.svg#icon-closebtn"></use>
+            </svg>
           </button>
           <div class="form-modal">
             <h3>Leave your contacts and we will call you back</h3>
@@ -70,9 +73,11 @@
             </div>
             <label class="label-modal" for="comment">Comment</label>
             <textarea class="input-comment" name="comment" id="comment" cols="30" rows="10"></textarea>
-            <input class="privacy" type="checkbox" name="privacy" id="privacy">
-            <label class="label-modal" for="privacy">
-              I accept the terms and conditions of the <a href="">Privacy Policy</a>
+            
+            
+              <input class="privacy" type="checkbox" name="privacy" id="privacy">
+              <label class="label-privacy" for="privacy">
+              I accept the terms and conditions of the <a class="privacy-link" href="">Privacy Policy</a>
             </label>
             <div class="btn-send">
             <button class="send" type="submit">Send</button>
@@ -369,4 +374,3 @@
     <script src="./js/modal.js"></script>
   </body>
 </html>
-
